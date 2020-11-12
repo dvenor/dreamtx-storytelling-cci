@@ -1,7 +1,6 @@
 # dreamtx-storytelling-cci
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+DreamTX 2020 from Saleforce.org. Use CumulusCI and storytelling data to accelerate team development on the Salesforce platform. 
 
 ## Development
 

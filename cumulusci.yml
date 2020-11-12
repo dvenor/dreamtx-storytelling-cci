@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.22.0'
+project:
+    name: dreamtx-storytelling-cci
+    package:
+        name: dreamtx-storytelling-cci
+        api_version: '50.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/dreamtx-storytelling-cci/tests
+            options:
+                outputdir: robot/dreamtx-storytelling-cci/results
+
+    robot_testdoc:
+        options:
+            path: robot/dreamtx-storytelling-cci/tests
+            output: robot/dreamtx-storytelling-cci/doc/dreamtx-storytelling-cci_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75

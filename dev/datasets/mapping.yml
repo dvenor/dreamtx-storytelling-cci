@@ -1,0 +1,66 @@
+Account:
+  sf_object: Account
+  table: Account
+  fields:
+    - Name
+    - AccountNumber
+    - Site
+    - Type
+    - Industry
+    - AnnualRevenue
+    - Rating
+    - Phone
+    - Fax
+    - Website
+    - Ownership
+    - Sic
+    - TickerSymbol
+    - BillingStreet
+    - BillingCity
+    - BillingState
+    - BillingPostalCode
+    - BillingCountry
+    - ShippingStreet
+    - ShippingCity
+    - ShippingState
+    - ShippingPostalCode
+    - ShippingCountry
+    - Description
+
+Contact:
+  sf_object: Contact
+  table: Contact
+  fields:
+    - Salutation
+    - FirstName
+    - LastName
+    - Title
+    - Email
+    - Department
+    - Birthdate
+    - LeadSource
+    - Phone
+    - HomePhone
+    - OtherPhone
+    - Fax
+    - AssistantName
+    - AssistantPhone
+    - MailingStreet
+    - MailingCity
+    - MailingState
+    - MailingPostalCode
+    - MailingCountry
+    - OtherStreet
+    - OtherCity
+    - OtherState
+    - OtherPostalCode
+    - OtherCountry
+    - Description
+  lookups:
+    AccountId:
+      key_field: account_id
+      table: Account
+    ReportsToId:
+      key_field: reports_to_id
+      table: Contact
+      after: Contact

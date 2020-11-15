@@ -23,3 +23,19 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+    extract_dataset:
+        group: "DreamTX Storytelling Data"
+        description: Extracts dataset
+        class_path: cumulusci.tasks.bulkdata.ExtractData
+        options:
+            mapping: dev/datasets/mapping.yml
+            sql_path: dev/datasets/data.sql
+
+    load_dataset:
+        group: "DreamTX Storytelling Data"
+        description: Loads dataset
+        class_path: cumulusci.tasks.bulkdata.LoadData
+        options:
+            mapping: dev/datasets/mapping.yml
+            sql_path: dev/datasets/data.sql
